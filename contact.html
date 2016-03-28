@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Diamond Prima Jaya</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<header>
+			<a href="index.html" id="header-logo" alt="PT. Diamond Prima Jaya">
+				<h1><img src="img/logo.png"></h1>
+			</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT US</a></li>
+					<li><a href="product.html">PRODUCTS</a></li>
+					<li><a href="contact.html" class="selected">CONTACT US</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="wrapper">
+			<section id="section-left-contact">
+				<p class="p-contact">Please contact us for more information:<p>
+				<img src="img/icons-05.png" alt="" class="contact-title">
+				<ul class="contact-info">
+					<li class="address">Komplek Miami Blok D1 no. 15<br>Tegal Alur, Jakarta</li>
+					<li class="phone"><a href="tel: +62216616372">021 661 6372</a> & <a href="tel: +62216603520">021 660 3520</a></li>
+					<li class="fax">021 667 8863</li>
+					<li class="mail"><a href="mailto:info@diamondprimajaya.com">info@diamondprimajaya.com</a></li>
+				</ul>
+			</section>
+			<br><br><br>
+			<section id="section-right-contact">
+				<p id="p-contact" class="p-contact">Hello,<p>
+				
+				<!-----------------------------------------------------
+				Code for "Contact Us" Form
+				------------------------------------------------------>
+				<form name="htmlform" method="post" action="html_form_send.php" class="css-form">
+					<table width="450px">
+						</tr>
+						<tr>
+							<td valign="top">
+								<label for="name">Your Name*</label>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">
+								<input  type="text" name="name" maxlength="50" size="40">
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">
+								<label for="email"> Your Email*</label>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">
+								<input  type="text" name="email" maxlength="80" size="40">
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">
+								<label for="telephone">Contact Number*</label>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">
+								<input  type="text" name="telephone" maxlength="30" size="40">
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">
+								<label for="subject">Subject*</label>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">
+								<input  type="text" name="subject" maxlength="50" size="40">
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">
+								<label for="message">Message*</label>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">
+								<textarea  name="message" maxlength="1000" cols="40" rows="6"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align:center">
+								*) required<br><br>
+								<input name="submitted" type="submit" value="sent">
+							</td>
+						</tr>
+					</table>
+				</form>
+
+			</section>
+			<footer>
+				<p>&copy; <script>document.write(new Date().getFullYear());</script> PT. Diamond Prima Jaya</p>
+			</footer>
+		</div>
+	</body>
+</html>

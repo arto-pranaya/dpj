@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Diamond Prima Jaya</title>
+		<!--Normalize or Standardize the css-->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<script type="text/javascript">
+			var image1 = new Image()
+			image1.src = "img/image1.jpg"
+			var image2 = new Image()
+			image2.src = "img/image2.jpg"
+			var image3 = new Image()
+			image3.src = "img/image3.jpg"
+		</script>
+
+	</head>
+	<body>
+		<header>
+			<a href="index.html" id="header-logo" alt="PT. Diamond Prima Jaya">
+				<h1><img src="img/logo.png"></h1>
+			</a>
+			<nav>
+				<ul>
+					<li><a href="index.html" class="selected">HOME</a></li>
+					<li><a href="about.html">ABOUT US</a></li>
+					<li><a href="product.html">PRODUCTS</a></li>
+					<li><a href="contact.html">CONTACT US</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<p><img src="img/image1.jpg" name="slide" class="top-image"/></p>
+			<script type="text/javascript">
+					var step=1;
+					function slideit()
+					{
+						document.images.slide.src = eval("image"+step+".src");
+						if(step<3)
+							step++;
+						else
+							step=1;
+						setTimeout("slideit()",5000);
+					}
+					slideit();
+			</script>
+			
+		<div id="wrapper">
+			<section id="section-left">
+				<h3>Percetakan Amplop Berkualitas</h3>
+				<p class="p-justify">
+					Seperti yang telah kita ketahui, amplop memiliki suatu nilai tambah dalam merepresentasikan
+					pencitraan perusahaan anda, dimana citra perusahaan akan terlihat dan dinilai oleh pelanggan
+					sebelum mereka membuka isi dari amplop tersebut. Selain itu amplop juga berguna sebagai alat
+					komunikasi atau bentuk promosi bagi perusahaan anda.
+				</p>
+				<p class="p-justify">
+					Pararel dengan peningkatan penggunaan media komunikasi elektrik dan kemajuan teknologi,
+					bentuk promosi/iklan pada amplop masih menjadi suatu daya tarik bagi pelanggan. Oleh sebab
+					itu, penggunaan amplop dengan kualitas terbaik akan menjadi sarana komunikasi yang efektif
+					dalam surat-menyurat, iklan, industri kartu ucapan dan tentunya memiliki arti penting dalam
+					merepresentasikan citra perusahaan.
+				</p>
+			</section>
+			<section id="section-right">
+				<img src="img/HP1-01.png" alt="" class="bottom-image">
+			</section>
+			<footer>
+				<p>&copy; <script>document.write(new Date().getFullYear());</script> PT. Diamond Prima Jaya</p>
+			</footer>
+		</div>
+	</body>
+</html>
